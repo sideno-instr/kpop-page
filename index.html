@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-POP 소개</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            neon: "#5eead4"
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translate3d(0, 24px, 0);
+      }
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    .fade-in {
+      opacity: 0;
+      animation: fadeInUp 0.9s ease forwards;
+      animation-delay: var(--delay, 0s);
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-slate-100">
+  <div class="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.2),_transparent_40%),radial-gradient(circle_at_bottom,_rgba(59,130,246,0.25),_transparent_45%)]"></div>
+
+  <nav class="sticky top-0 z-50 px-6 py-4">
+    <div class="mx-auto flex max-w-6xl items-center justify-between rounded-full border border-white/10 bg-slate-900/60 px-6 py-3 text-sm shadow-[0_15px_40px_rgba(15,23,42,0.5)] backdrop-blur-2xl fade-in" style="--delay: 0s;">
+      <a class="text-base font-semibold tracking-[0.2em] text-blue-100" href="#top">K-WAVE</a>
+      <div class="flex flex-wrap items-center gap-3 text-blue-100">
+        <a class="rounded-full border border-white/5 px-4 py-1.5 transition hover:bg-white/10" href="#k-pop">K-POP</a>
+        <a class="rounded-full border border-white/5 px-4 py-1.5 transition hover:bg-white/10" href="#us-pop">미국 팝</a>
+        <a class="rounded-full border border-white/5 px-4 py-1.5 transition hover:bg-white/10" href="#uk-pop">영국 팝</a>
+        <a class="rounded-full border border-white/5 px-4 py-1.5 transition hover:bg-white/10" href="#jp-pop">일본 팝</a>
+        <a class="rounded-full border border-white/5 px-4 py-1.5 transition hover:bg-white/10" href="#latin-pop">라틴 팝</a>
+      </div>
+      <button class="rounded-full border border-white/30 px-4 py-1.5 text-blue-100 transition hover:-translate-y-0.5 hover:bg-white/10">글로벌 팝 지도</button>
+    </div>
+  </nav>
+
+  <header id="k-pop" class="relative px-6 py-16 fade-in" style="--delay: 0.05s;">
+    <div class="mx-auto flex max-w-5xl flex-col gap-10 rounded-[32px] border border-white/10 bg-white/10 p-10 text-center text-white shadow-[0_25px_60px_rgba(15,23,42,0.6)] backdrop-blur-2xl">
+      <div class="flex flex-col items-center gap-6 sm:flex-row sm:text-left">
+        <img class="h-28 w-44 rounded-3xl border border-white/30 bg-white/40 p-3 shadow-inner" src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg" alt="대한민국 국기" loading="lazy">
+        <div>
+          <p class="text-sm uppercase tracking-[0.4em] text-blue-200">K-WAVE ORBIT</p>
+          <h1 class="mt-4 text-4xl font-extrabold sm:text-5xl">K-POP, 전 세계를 사로잡다</h1>
+          <p class="mt-5 text-base text-blue-100">한국 대중음악의 혁신, 퍼포먼스, 그리고 팬덤 문화를 글래스모피즘 감성으로 느껴보세요.</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-4 text-sm text-blue-100">
+        <span class="rounded-full border border-white/20 bg-white/10 px-5 py-2 backdrop-blur-md">퍼포먼스</span>
+        <span class="rounded-full border border-white/20 bg-white/10 px-5 py-2 backdrop-blur-md">팬덤</span>
+        <span class="rounded-full border border-white/20 bg-white/10 px-5 py-2 backdrop-blur-md">글로벌 사운드</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative mx-auto max-w-5xl px-6 pb-16">
+    <div class="grid gap-8 md:grid-cols-2">
+      <section class="rounded-[28px] border border-white/15 bg-white/10 p-8 text-slate-100 shadow-[0_20px_50px_rgba(8,47,73,0.55)] backdrop-blur-2xl fade-in" style="--delay: 0.15s;">
+        <p class="text-sm font-semibold uppercase tracking-widest text-blue-500">Core DNA</p>
+        <h2 class="mt-3 text-2xl font-bold text-white">K-POP의 특징</h2>
+        <p class="mt-3 text-blue-100">스토리텔링과 하이브리드 사운드, 완벽한 팀 퍼포먼스가 결합된 장르입니다.</p>
+        <ul class="mt-6 space-y-4 text-blue-50">
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-sky-400"></span>
+            완성도 높은 무대 구성과 서사 중심의 뮤직비디오
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-sky-400"></span>
+            체계적인 트레이닝 시스템과 팀 중심의 아이덴티티
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-sky-400"></span>
+            다국적 제작진과 팬 참여형 콘텐츠 전략
+          </li>
+        </ul>
+        <div class="mt-7 rounded-2xl border border-white/20 bg-white/5 p-5 text-sm text-blue-100 backdrop-blur">
+          팬들과의 실시간 소통, 라이브 콘텐츠, 글로벌 투어로 언제 어디서나 연결됩니다.
+        </div>
+      </section>
+
+      <section class="rounded-[28px] border border-white/10 bg-gradient-to-br from-blue-900/60 via-indigo-900/70 to-slate-900/70 p-8 text-slate-100 shadow-[0_25px_60px_rgba(2,6,23,0.8)] backdrop-blur-2xl fade-in" style="--delay: 0.2s;">
+        <p class="text-sm uppercase tracking-[0.4em] text-blue-200">Spotlight</p>
+        <h2 class="mt-3 text-2xl font-bold text-white">대표 아티스트</h2>
+        <p class="mt-4 text-blue-100">글로벌 차트를 장악한 팀들은 각자 고유한 콘셉트와 사운드로 K-POP을 정의합니다.</p>
+        <div class="mt-8 grid gap-4 sm:grid-cols-2">
+          <div class="rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur">
+            <p class="text-sm text-blue-100">차트 올킬</p>
+            <h3 class="text-lg font-semibold text-white">BTS</h3>
+            <p class="text-sm text-blue-100">메시지와 퍼포먼스의 조화</p>
+          </div>
+          <div class="rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur">
+            <p class="text-sm text-blue-100">글로벌 팝 아이콘</p>
+            <h3 class="text-lg font-semibold text-white">BLACKPINK</h3>
+            <p class="text-sm text-blue-100">카리스마와 패션 리더십</p>
+          </div>
+          <div class="rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur">
+            <p class="text-sm text-blue-100">젠지 감성</p>
+            <h3 class="text-lg font-semibold text-white">NewJeans</h3>
+            <p class="text-sm text-blue-100">레트로와 Y2K 감성</p>
+          </div>
+          <div class="rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur">
+            <p class="text-sm text-blue-100">퍼포먼스 장인</p>
+            <h3 class="text-lg font-semibold text-white">SEVENTEEN</h3>
+            <p class="text-sm text-blue-100">셀프 프로듀싱 팀워크</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="mt-10 rounded-[28px] border border-white/15 bg-white/10 p-8 text-slate-100 shadow-[0_30px_60px_rgba(2,6,23,0.8)] backdrop-blur-2xl fade-in" style="--delay: 0.25s;">
+      <p class="text-sm font-semibold uppercase tracking-[0.4em] text-blue-300">Timeline</p>
+      <h2 class="mt-3 text-2xl font-bold text-white">2000년대 이후 주요 흐름</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl border border-white/15 bg-white/5 p-5 backdrop-blur">
+          <p class="text-sm text-blue-200">2000년대</p>
+          <h3 class="mt-2 text-xl font-semibold text-white">인터넷과 아이돌 2세대</h3>
+          <p class="mt-3 text-sm text-blue-100">온라인 커뮤니티와 디지털 음원 시장이 성장하며 아이돌 산업이 체계화되었습니다.</p>
+        </div>
+        <div class="rounded-2xl border border-white/15 bg-white/5 p-5 backdrop-blur">
+          <p class="text-sm text-blue-200">2010년대</p>
+          <h3 class="mt-2 text-xl font-semibold text-white">글로벌 붐</h3>
+          <p class="mt-3 text-sm text-blue-100">유튜브와 SNS 확산, 북미·유럽 투어를 통해 K-POP이 주류 팝 시장에 안착했습니다.</p>
+        </div>
+        <div class="rounded-2xl border border-white/15 bg-white/5 p-5 backdrop-blur">
+          <p class="text-sm text-blue-200">2020년대</p>
+          <h3 class="mt-2 text-xl font-semibold text-white">하이브리드 사운드와 위기</h3>
+          <p class="mt-3 text-sm text-blue-100">장르 경계가 흐려지고, 짧은 시장 주기와 글로벌 경쟁 심화에 대응하는 전략이 요구됩니다.</p>
+        </div>
+      </div>
+      <p class="mt-8 text-xs text-blue-200/80">출처: 위키백과 K-pop 문서 기반 정리</p>
+    </section>
+
+    <section class="mt-10 rounded-[28px] border border-white/10 bg-gradient-to-br from-white/5 to-white/10 p-8 shadow-[0_35px_70px_rgba(15,23,42,0.65)] backdrop-blur-2xl fade-in" style="--delay: 0.3s;">
+      <p class="text-sm font-semibold uppercase tracking-[0.4em] text-blue-300">Elements</p>
+      <h2 class="mt-3 text-2xl font-bold text-white">핵심 요소와 문화</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-2">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur">
+          <h3 class="text-lg font-semibold text-white">국제화된 음악</h3>
+          <p class="mt-2 text-sm text-blue-100">미국 팝과 흑인 음악, EDM 등 다양한 장르를 혼합해 글로벌 감각을 유지합니다.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur">
+          <h3 class="text-lg font-semibold text-white">팬덤·커뮤니티</h3>
+          <p class="mt-2 text-sm text-blue-100">팬클럽, 응원법, 굿즈 문화 등 능동적인 팬 참여가 산업을 견인합니다.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur">
+          <h3 class="text-lg font-semibold text-white">뮤직비디오 & 패션</h3>
+          <p class="mt-2 text-sm text-blue-100">대형 제작비와 스타일리시한 패션이 시각적 정체성을 만들고 트렌드를 주도합니다.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur">
+          <h3 class="text-lg font-semibold text-white">군무와 퍼포먼스</h3>
+          <p class="mt-2 text-sm text-blue-100">정교한 그룹댄스와 라이브 퍼포먼스로 공연 중심 문화를 형성합니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-10 rounded-[28px] border border-white/15 bg-white/10 p-8 text-slate-100 shadow-[0_30px_60px_rgba(8,47,73,0.65)] backdrop-blur-2xl fade-in" style="--delay: 0.35s;">
+      <p class="text-sm font-semibold uppercase tracking-[0.4em] text-blue-300">Digital Era</p>
+      <h2 class="mt-3 text-2xl font-bold text-white">디지털 앨범과 플랫폼 전략</h2>
+      <div class="mt-6 space-y-4 text-blue-100">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
+          <h3 class="text-base font-semibold text-white">디지털 싱글 & 피지컬 패키지</h3>
+          <p class="mt-1 text-sm">디지털 발매로 글로벌 동시 공개를 진행하면서, 포토북·포토카드 등 컬렉션형 앨범으로 팬 경험을 확장합니다.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
+          <h3 class="text-base font-semibold text-white">스트리밍과 소셜 챌린지</h3>
+          <p class="mt-1 text-sm">플레이리스트 전략과 숏폼 챌린지로 바이럴을 촉발하고, 실시간 소통 플랫폼으로 팬과 긴밀히 연결됩니다.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
+          <h3 class="text-base font-semibold text-white">글로벌 협업</h3>
+          <p class="mt-1 text-sm">해외 작곡가·프로듀서와의 협업으로 새로운 사운드를 실험하고, 다양한 언어 버전으로 시장을 세분화합니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-10 rounded-[28px] border border-white/15 bg-white/10 p-8 text-slate-100 shadow-[0_30px_60px_rgba(8,47,73,0.65)] backdrop-blur-2xl fade-in" style="--delay: 0.4s;">
+      <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-widest text-blue-300">Get Started</p>
+          <h2 class="mt-3 text-2xl font-bold text-white">K-POP 시작해보기</h2>
+          <p class="mt-3 text-blue-100">플랫폼과 커뮤니티를 활용하면 더 깊은 몰입이 가능합니다.</p>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a class="rounded-full border border-white/40 bg-white/20 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:-translate-y-0.5 hover:bg-white/40" href="#!">스트림 바로가기</a>
+          <a class="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-blue-200 transition hover:-translate-y-0.5 hover:border-white/40" href="#!">팬 커뮤니티</a>
+        </div>
+      </div>
+      <ul class="mt-8 grid gap-4 text-sm text-blue-100 sm:grid-cols-3">
+        <li class="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
+          <p class="font-semibold text-white">라이브 방송</p>
+          <p class="mt-1 text-blue-100">팬과 동시에 소통하며 무대를 즐기세요.</p>
+        </li>
+        <li class="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
+          <p class="font-semibold text-white">스트리밍 플레이리스트</p>
+          <p class="mt-1 text-blue-100">장르별·기분별 큐레이션을 경험하세요.</p>
+        </li>
+        <li class="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
+          <p class="font-semibold text-white">오프라인 이벤트</p>
+          <p class="mt-1 text-blue-100">팬미팅, 팝업스토어로 더 강한 몰입을!</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <section id="us-pop" class="px-6 pb-16">
+    <div class="mx-auto max-w-5xl rounded-[32px] border border-white/15 bg-white/10 p-10 text-slate-100 shadow-[0_30px_80px_rgba(15,23,42,0.7)] backdrop-blur-2xl fade-in" style="--delay: 0.2s;">
+      <div class="flex flex-col gap-8 md:flex-row md:items-center">
+        <div class="space-y-4 md:w-1/2">
+          <p class="text-sm uppercase tracking-[0.4em] text-blue-300">US POP</p>
+          <h2 class="text-3xl font-bold text-white">미국 팝: 메가스타와 사운드 실험</h2>
+          <p class="text-blue-100">R&B, 힙합, 일렉트로닉을 융합한 메가 프로덕션과 스타 시스템이 특징입니다. 빌보드 차트 중심의 트렌드가 세계 팝 시장을 선도하죠.</p>
+          <ul class="space-y-2 text-sm text-blue-100">
+            <li>· 대형 레이블과 프로듀서 네트워크</li>
+            <li>· 슈퍼볼, 그래미 등 초대형 공연 플랫폼</li>
+            <li>· 팝·힙합·컨트리의 교차 협업</li>
+          </ul>
+        </div>
+        <div class="md:w-1/2">
+          <div class="rounded-[28px] border border-white/20 bg-gradient-to-br from-blue-600/30 to-indigo-700/30 p-6 text-sm text-blue-50 shadow-inner backdrop-blur">
+            <p class="text-base font-semibold text-white">대표 아이콘</p>
+            <p class="mt-2">비욘세, 테일러 스위프트, 더 위켄드, 두아 리파</p>
+            <p class="mt-6 text-xs uppercase tracking-[0.3em] text-blue-200">STREAMING · FESTIVAL · AWARDS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="uk-pop" class="px-6 pb-16">
+    <div class="mx-auto max-w-5xl rounded-[32px] border border-white/15 bg-white/10 p-10 text-slate-100 shadow-[0_30px_80px_rgba(8,47,73,0.7)] backdrop-blur-2xl fade-in" style="--delay: 0.25s;">
+      <div class="flex flex-col gap-8 md:flex-row md:items-center">
+        <div class="space-y-4 md:w-1/2">
+          <p class="text-sm uppercase tracking-[0.4em] text-blue-300">UK POP</p>
+          <h2 class="text-3xl font-bold text-white">영국 팝: 브릿팝 유산과 실험적 감성</h2>
+          <p class="text-blue-100">비틀즈, 오아시스로 이어지는 브릿팝 뿌리와 전자음악, 얼터너티브를 결합해 독창적인 사운드를 만들어냅니다.</p>
+          <ul class="space-y-2 text-sm text-blue-100">
+            <li>· 런던 기반 인디 씬과 BBC 라이브 세션</li>
+            <li>· 글래스톤베리, 브릿 어워즈 문화</li>
+            <li>· 소울·재즈·UK 개러지의 현대적 재해석</li>
+          </ul>
+        </div>
+        <div class="md:w-1/2">
+          <div class="rounded-[28px] border border-white/20 bg-gradient-to-br from-slate-800/40 to-indigo-800/40 p-6 text-sm text-blue-50 shadow-inner backdrop-blur">
+            <p class="text-base font-semibold text-white">대표 아이콘</p>
+            <p class="mt-2">아델, 해리 스타일스, 콜드플레이, 듀아 리파</p>
+            <p class="mt-6 text-xs uppercase tracking-[0.3em] text-blue-200">BRITISH INVASION · LIVE SESSION</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="jp-pop" class="px-6 pb-16">
+    <div class="mx-auto max-w-5xl rounded-[32px] border border-white/15 bg-white/10 p-10 text-slate-100 shadow-[0_30px_80px_rgba(2,6,23,0.7)] backdrop-blur-2xl fade-in" style="--delay: 0.3s;">
+      <div class="flex flex-col gap-8 md:flex-row md:items-center">
+        <div class="space-y-4 md:w-1/2">
+          <p class="text-sm uppercase tracking-[0.4em] text-blue-300">J-POP</p>
+          <h2 class="text-3xl font-bold text-white">일본 팝: 시티팝 감성과 아이돌 시스템</h2>
+          <p class="text-blue-100">시티팝, 애니송, 밴드 문화까지 다양한 장르가 공존하며 세밀한 프로덕션과 서정성이 돋보입니다.</p>
+          <ul class="space-y-2 text-sm text-blue-100">
+            <li>· 오타쿠 문화와 연계된 아이돌 생태계</li>
+            <li>· 오사카/도쿄 라이브 클럽 네트워크</li>
+            <li>· 시티팝, 보사노바, 재즈퓨전 영향</li>
+          </ul>
+        </div>
+        <div class="md:w-1/2">
+          <div class="rounded-[28px] border border-white/20 bg-gradient-to-br from-blue-500/30 to-purple-600/30 p-6 text-sm text-blue-50 shadow-inner backdrop-blur">
+            <p class="text-base font-semibold text-white">대표 아이콘</p>
+            <p class="mt-2">YOASOBI, King & Prince, Official髭男dism, Perfume</p>
+            <p class="mt-6 text-xs uppercase tracking-[0.3em] text-blue-200">CITY POP · ANISON · IDOL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="latin-pop" class="px-6 pb-20">
+    <div class="mx-auto max-w-5xl rounded-[32px] border border-white/15 bg-white/10 p-10 text-slate-100 shadow-[0_30px_80px_rgba(4,47,73,0.7)] backdrop-blur-2xl fade-in" style="--delay: 0.35s;">
+      <div class="flex flex-col gap-8 md:flex-row md:items-center">
+        <div class="space-y-4 md:w-1/2">
+          <p class="text-sm uppercase tracking-[0.4em] text-blue-300">LATIN POP</p>
+          <h2 class="text-3xl font-bold text-white">라틴 팝: 리듬과 열정의 글로벌 무브먼트</h2>
+          <p class="text-blue-100">레게톤, 바차타, 살사 등 라틴 리듬을 팝 구조와 결합해 중독성 있는 사운드를 전 세계에 확산합니다.</p>
+          <ul class="space-y-2 text-sm text-blue-100">
+            <li>· 카리브·남미 댄스 리듬 기반</li>
+            <li>· 스페인어·포르투갈어 가삿말의 감성</li>
+            <li>· 스트리밍 중심의 글로벌 팬덤</li>
+          </ul>
+        </div>
+        <div class="md:w-1/2">
+          <div class="rounded-[28px] border border-white/20 bg-gradient-to-br from-rose-500/30 to-orange-500/30 p-6 text-sm text-blue-50 shadow-inner backdrop-blur">
+            <p class="text-base font-semibold text-white">대표 아이콘</p>
+            <p class="mt-2">Bad Bunny, Rosalía, Karol G, J Balvin</p>
+            <p class="mt-6 text-xs uppercase tracking-[0.3em] text-blue-200">REGGAETON · BACHATA · GLOBAL COLLAB</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="px-6 pb-10 text-center text-sm text-blue-200">
+    © 2025 K-POP Guide · Designed with Tailwind CSS
+  </footer>
+</body>
+</html>
