@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-POP Universe | The Global Cultural Standard</title>
+    <meta name="description"
+        content="Discover the history, characteristics, and global impact of K-POP with curated Wikipedia insights.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { outfit: ['Outfit', 'sans-serif'] },
+                    animation: {
+                        'slow-fade': 'fadeIn 1.5s ease-out',
+                        'float': 'float 8s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        fadeIn: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+                        float: { '0%, 100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-20px)' } }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body { @apply bg-[#030712] text-slate-100 font-outfit antialiased selection:bg-cyan-500/30 overflow-x-hidden; }
+        }
+        @layer components {
+            .glass-panel { @apply bg-white/10 backdrop-blur-2xl border border-white/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] ring-1 ring-white/10; }
+            .glass-card { @apply glass-panel transition-all duration-500 hover:bg-white/15 hover:border-white/40 hover:-translate-y-3 hover:shadow-cyan-500/10; }
+            .blue-gradient-text { @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-500; }
+            .section-title { @apply text-4xl md:text-6xl font-black mb-16 text-center tracking-tighter uppercase blue-gradient-text; }
+            .history-dot { @apply w-4 h-4 rounded-full bg-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.8)]; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Ambient Background -->
+    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+        <div
+            class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-cyan-900/10 rounded-full blur-[150px] animate-pulse-slow">
+        </div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-indigo-900/10 rounded-full blur-[150px] animate-pulse-slow"
+            style="animation-delay: 2s;"></div>
+    </div>
+
+    <!-- Nav -->
+    <nav
+        class="fixed top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-6xl z-50 glass-panel rounded-2xl px-6 md:px-10 h-16 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg"
+                alt="South Korea Flag" class="w-8 h-auto shadow-sm">
+            <div class="text-xl font-black tracking-tighter blue-gradient-text">K-POP UNIVERSE</div>
+        </div>
+        <div class="hidden md:flex space-x-10 font-bold text-xs tracking-widest uppercase opacity-80">
+            <a href="#history" class="hover:text-cyan-400">History</a>
+            <a href="#features" class="hover:text-cyan-400">Features</a>
+            <a href="#companies" class="hover:text-cyan-400">Industry</a>
+            <a href="#icons" class="hover:text-cyan-400">Stars</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="relative h-screen flex items-center justify-center pt-20">
+        <div class="absolute inset-0 -z-10 bg-slate-950">
+            <img src="assets/hero_bg.png" alt="Hero Background"
+                class="w-full h-full object-cover opacity-20 animate-float scale-110">
+            <div class="absolute inset-0 bg-gradient-to-b from-[#030712]/10 via-[#030712]/80 to-[#030712]"></div>
+        </div>
+        <div class="relative z-10 text-center px-6 max-w-5xl animate-slow-fade">
+            <h1 class="text-6xl md:text-[8rem] font-black tracking-tighter mb-6 leading-[0.85]">
+                LIMITLESS<br><span class="blue-gradient-text">RESONANCE</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
+                서태지와 아이들의 충격부터 BTS의 빌보드 정복까지.<br>
+                한국에서 시작되어 전 세계의 주류 문화가 된 K-POP의 위대한 여정을 탐험하세요.
+            </p>
+            <div class="flex gap-4 justify-center">
+                <a href="#history"
+                    class="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl font-black uppercase text-xs tracking-widest hover:scale-105 transition-transform shadow-xl shadow-cyan-500/20">Learn
+                    History</a>
+                <a href="#features"
+                    class="px-8 py-4 glass-panel rounded-xl font-black uppercase text-xs tracking-widest hover:bg-white/20 transition-all">Core
+                    Features</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="space-y-48 pb-48">
+
+        <!-- History Timeline -->
+        <section id="history" class="max-w-6xl mx-auto px-6">
+            <h2 class="section-title">Timeline of <span class="text-white">Evolution</span></h2>
+            <div
+                class="relative space-y-20 before:absolute before:left-0 md:before:left-1/2 before:w-px before:h-full before:bg-gradient-to-b before:from-cyan-500/50 before:to-indigo-500/50">
+                <!-- Era 1 -->
+                <div class="relative flex flex-col md:flex-row items-center gap-10">
+                    <div class="md:w-1/2 text-right hidden md:block">
+                        <h3 class="text-2xl font-black text-cyan-400 mb-2">1992 - The Genesis</h3>
+                        <p class="text-slate-400 leading-relaxed font-light">서태지와 아이들의 등장. 힙합과 댄스 음악의 결합으로 한국 대중음악의
+                            패러다임을 바꿨습니다.</p>
+                    </div>
+                    <div class="history-dot z-10 hidden md:block"></div>
+                    <div class="md:w-1/2 md:pl-10">
+                        <div class="glass-card p-6 rounded-2xl md:hidden">
+                            <h3 class="text-xl font-black text-cyan-400 mb-2">1992 - The Genesis</h3>
+                            <p class="text-slate-400 leading-relaxed font-light text-sm">서태지와 아이들의 등장. 힙합과 댄스 음악의 결합으로
+                                한국 대중음악의 패러다임을 바꿨습니다.</p>
+                        </div>
+                        <div class="hidden md:block glass-panel p-6 rounded-2xl border-l-4 border-cyan-500">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Seotaiji_and_Boys_1st_album.jpg/220px-Seotaiji_and_Boys_1st_album.jpg"
+                                alt="Seo Taiji"
+                                class="w-full h-32 object-cover rounded-lg mb-4 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+                            <p class="text-xs text-slate-500 italic">1세대 아이돌: H.O.T., Sechs Kies, g.o.d</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Era 2 -->
+                <div class="relative flex flex-col md:flex-row-reverse items-center gap-10">
+                    <div class="md:w-1/2 text-left hidden md:block">
+                        <h3 class="text-2xl font-black text-blue-400 mb-2">2000s - Digital & Expansion</h3>
+                        <p class="text-slate-400 leading-relaxed font-light text-right md:text-left">디지털 음원의 시대. 동방신기,
+                            BIGBANG, 원더걸스, 소녀시대가 아시아를 넘어 세계의 문을 두드렸습니다.</p>
+                    </div>
+                    <div class="history-dot z-10 hidden md:block"></div>
+                    <div class="md:w-1/2 md:pr-10">
+                        <div class="glass-card p-6 rounded-2xl md:hidden">
+                            <h3 class="text-xl font-black text-blue-400 mb-2">2000s - Digital & Expansion</h3>
+                            <p class="text-slate-400 leading-relaxed font-light text-sm">동방신기, 원더걸스가 이끄는 한류의 본격적인 해외 진출.
+                            </p>
+                        </div>
+                        <div class="hidden md:block glass-panel p-6 rounded-2xl border-r-4 border-blue-500">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Wonder_Girls_in_2016.png/220px-Wonder_Girls_in_2016.png"
+                                alt="Wonder Girls"
+                                class="w-full h-32 object-cover rounded-lg mb-4 opacity-50 grayscale hover:grayscale-0 transition-all">
+                            <p class="text-xs text-slate-500 italic">원더걸스 최초의 빌보드 핫 100 진입</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Era 3 -->
+                <div class="relative flex flex-col md:flex-row items-center gap-10">
+                    <div class="md:w-1/2 text-right hidden md:block">
+                        <h3 class="text-2xl font-black text-indigo-400 mb-2">2020s - Global Dominance</h3>
+                        <p class="text-slate-400 leading-relaxed font-light">BTS 빌보드 1위, 블랙핑크 코첼라 헤드라이너. 이제 K-POP은 지역을
+                            넘어 '글로벌 표준'이 되었습니다.</p>
+                    </div>
+                    <div class="history-dot z-10 hidden md:block"></div>
+                    <div class="md:w-1/2 md:pl-10">
+                        <div class="glass-panel p-6 rounded-2xl border-l-4 border-indigo-500">
+                            <p class="text-sm font-bold text-white mb-2">"Dynamite" & "APT." Impact</p>
+                            <p class="text-xs text-slate-500">로제와 브루노 마스의 만남 등 글로벌 아티스트와의 협업이 일상이 된 시대.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features (Wiki Derived) -->
+        <section id="features" class="max-w-7xl mx-auto px-6">
+            <h2 class="section-title">The <span class="text-white">K-Factor</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="glass-card p-10 rounded-3xl">
+                    <span class="text-4xl mb-6 block">⚙️</span>
+                    <h3 class="text-xl font-black mb-4 uppercase tracking-tighter">Training System</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed font-light">보컬, 안무, 외국어 교육까지. 전문화된 인큐베이팅과 연습생
+                        제도(In-house Training)는 K-POP만의 독보적인 강점입니다.</p>
+                </div>
+                <div class="glass-card p-10 rounded-3xl">
+                    <span class="text-4xl mb-6 block">⚡</span>
+                    <h3 class="text-xl font-black mb-4 uppercase tracking-tighter">Performance</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed font-light">완벽한 대칭을 이루는 '칼군무(Synchronized)'와 누구나
+                        따라하기 쉬운 '포인트 안무'가 숏폼 문화를 선도합니다.</p>
+                </div>
+                <div class="glass-card p-10 rounded-3xl">
+                    <span class="text-4xl mb-6 block">🎨</span>
+                    <h3 class="text-xl font-black mb-4 uppercase tracking-tighter">Visual Design</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed font-light">압도적인 예산의 뮤직비디오, 시네마틱 세계관(Universe), 그리고
+                        명품 앰버서더로 활약하는 하이패션이 결합됩니다.</p>
+                </div>
+                <div class="glass-card p-10 rounded-3xl">
+                    <span class="text-4xl mb-6 block">🌀</span>
+                    <h3 class="text-xl font-black mb-4 uppercase tracking-tighter">Hybrid Genre</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">팝, R&B, 힙합, EDM, 락을 한국적으로 재배합하여 낯설면서도
+                        익숙한 'K-Genre'를 탄생시킵니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Companies -->
+        <section id="companies" class="max-w-7xl mx-auto px-6">
+            <h2 class="section-title">The <span class="text-white">Giants</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="glass-panel p-8 rounded-2xl hover:scale-105 transition-transform text-center">
+                    <h4 class="text-2xl font-black blue-gradient-text mb-4">HYBE</h4>
+                    <p class="text-xs text-slate-500 uppercase tracking-widest mb-4">The New Standard</p>
+                    <p class="text-sm text-slate-400 font-light italic">BTS, SEVENTEEN, NewJeans</p>
+                </div>
+                <div class="glass-panel p-8 rounded-2xl hover:scale-105 transition-transform text-center">
+                    <h4 class="text-2xl font-black blue-gradient-text mb-4">SM</h4>
+                    <p class="text-xs text-slate-500 uppercase tracking-widest mb-4">The Pioneer</p>
+                    <p class="text-sm text-slate-400 font-light italic">TVXQ, EXO, aespa</p>
+                </div>
+                <div class="glass-panel p-8 rounded-2xl hover:scale-105 transition-transform text-center">
+                    <h4 class="text-2xl font-black blue-gradient-text mb-4">YG</h4>
+                    <p class="text-xs text-slate-500 uppercase tracking-widest mb-4">Original Hip-Hop</p>
+                    <p class="text-sm text-slate-400 font-light italic">BIGBANG, BLACKPINK</p>
+                </div>
+                <div class="glass-panel p-8 rounded-2xl hover:scale-105 transition-transform text-center">
+                    <h4 class="text-2xl font-black blue-gradient-text mb-4">JYP</h4>
+                    <p class="text-xs text-slate-500 uppercase tracking-widest mb-4">Global Network</p>
+                    <p class="text-sm text-slate-400 font-light italic">TWICE, Stray Kids, ITZY</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats / Impact -->
+        <section id="icons" class="max-w-7xl mx-auto px-6">
+            <div
+                class="glass-panel p-16 rounded-[4rem] flex flex-col md:flex-row items-center justify-around gap-12 border-indigo-500/20">
+                <div class="text-center">
+                    <div class="text-5xl md:text-7xl font-black blue-gradient-text">1st</div>
+                    <div class="text-xs text-slate-500 uppercase tracking-widest mt-2">Billboard Hot 100 (BTS)</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl md:text-7xl font-black blue-gradient-text">4.5B+</div>
+                    <div class="text-xs text-slate-500 uppercase tracking-widest mt-2">Gangnam Style Views</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl md:text-7xl font-black blue-gradient-text">Infinity</div>
+                    <div class="text-xs text-slate-500 uppercase tracking-widest mt-2">Cultural Influence</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5 py-24 bg-[#030712]/80">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg" alt="Flag"
+                class="w-12 mx-auto mb-8 opacity-50">
+            <h2 class="text-3xl font-black blue-gradient-text mb-12">K-POP UNIVERSE</h2>
+            <div
+                class="grid grid-cols-2 md:grid-cols-4 gap-12 text-left mb-20 max-w-4xl mx-auto font-light text-slate-400">
+                <div>
+                    <h5 class="text-white font-black mb-4 uppercase text-xs">Phases</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li>1990s Origins</li>
+                        <li>2000s Hallyu</li>
+                        <li>2010s Global</li>
+                        <li>2020s Hybrid</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-black mb-4 uppercase text-xs">Companies</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li>HYBE Corp.</li>
+                        <li>SM Ent.</li>
+                        <li>YG Family</li>
+                        <li>JYP Nation</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-black mb-4 uppercase text-xs">Culture</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li>Fandom Support</li>
+                        <li>Son-min-su</li>
+                        <li>Dance Challenge</li>
+                        <li>Lightsticks</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-black mb-4 uppercase text-xs">Resources</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li>Wikipedia Reference</li>
+                        <li>Billboard Stats</li>
+                        <li>Melon Charts</li>
+                        <li>YouTube Trends</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-slate-600 text-[10px] tracking-[0.5em] uppercase">대한민국의 소리가 전 세계에 닿는 곳. &copy; 2026 K-POP
+                UNIVERSE.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
